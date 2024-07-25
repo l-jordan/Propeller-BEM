@@ -1,0 +1,24 @@
+['Graph']
+'graph' = false
+
+['Aircraft Environment']
+'V' = 145 #Velocity [m/s]
+'h' = 3000 #Altitude [m]
+
+['Propeller information']
+'B' = 3 #Amount of blades
+'R' = 6 #Radius of the blade from hub to tip
+'rh' = 0.45 #inner radius of hub
+'rt' = 6.45 #outer radius rt-rh = R
+'RPM' = 250 #RPM of the Propeller
+'chord' = 0.5 #Chord [m]
+'Prop number' = 4
+
+['Airfoil']
+'cl' = 0.45 #Lift coefficient at 3 degrees AoA
+'cd' = 0.0098 #Drag coefficient at 3 degrees AoA
+
+['Induction factors'] #for BEM analysis
+'a' = 0.5
+'ap' = 0.01
+
