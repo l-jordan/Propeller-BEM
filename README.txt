@@ -33,4 +33,4 @@ and to choose a twist distribution. From there a more accurate maximum speed and
 1. I used the paper: Propeller Blade Element Momentum Theory with Vortex Wake Deflection
  [Rwigema, M.K., 2010] to create this programme.
 2. Where I got the lift and drag coefficient of my airfoil at 3 degrees AoA:
-    http://airfoiltools.com/airfoil/details?airfoil=naca4421-il
+    http://airfoiltools.com/
