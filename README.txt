@@ -3,7 +3,7 @@ Author: Lauren Jordan
 Contact: l.jordan@student.tudelft.nl
 
 ########################################## HOW TO USE THIS PROGRAMME ###########################################
-1. Open 'Input_information.toml' and replace the inputs with your propeller information. 
+1. Open 'Input_information.toml' and replace the inputs with your aircraft's information. 
     If you want to print graphs that show the induction factors, correction factor and twist across the blade, 
     set 'graph' to true. If not, set to false.
 2. Open 'Propeller_BEM.py' and run the file. 
