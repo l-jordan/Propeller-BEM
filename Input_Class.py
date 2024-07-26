@@ -19,12 +19,13 @@ class Inputs():
         self.c = data['Propeller information']['chord']
         self.n = data['Propeller information']['Prop number']
 
+        self.Pa = data['Engine information']['Pa']
+
         self.cl = data['Airfoil']['cl']
         self.cd = data['Airfoil']['cd']
 
         self.a = data['Induction factors']['a']
         self.ap = data['Induction factors']['ap']
-
         self.rm = ((self.rt**2 + self.rh**2)/2)**(0.5)
         self.s = (2*np.pi*self.rm)/self.B
         self.solidity = self.c/self.s

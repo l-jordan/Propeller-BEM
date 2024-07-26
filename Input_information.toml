@@ -1,5 +1,5 @@
 ['Graph']
-'graph' = false
+'graph' = true #true or false
 
 ['Aircraft Environment']
 'V' = 145 #Velocity [m/s]
@@ -10,15 +10,18 @@
 'R' = 6 #Radius of the blade from hub to tip
 'rh' = 0.45 #inner radius of hub
 'rt' = 6.45 #outer radius rt-rh = R
-'RPM' = 250 #RPM of the Propeller
+'RPM' = 333 #RPM of the Propeller
 'chord' = 0.5 #Chord [m]
 'Prop number' = 4
+
+['Engine information']
+'Pa' = 5219 #Power in kW of ONE engine
 
 ['Airfoil']
 'cl' = 0.45 #Lift coefficient at 3 degrees AoA
 'cd' = 0.0098 #Drag coefficient at 3 degrees AoA
 
-['Induction factors'] #for BEM analysis
+['Induction factors'] #For BEM analysis. Look at literature
 'a' = 0.5
 'ap' = 0.01
 

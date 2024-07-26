@@ -20,6 +20,7 @@ class Propeller_Thrust:
         self.solidity = self.input.solidity #Solidity of the blades
         self.n = self.input.n #Number of propellers
         self.graph = self.input.graph
+        self.Pa = self.input.Pa #Power available of one engine
 
         self.r = None #Radius of blade elements
         self.rho = None #Density at altitude
@@ -154,14 +155,17 @@ class Propeller_Thrust:
             ax2.grid(True)
             plt.show()
 
-        return Pr, T, Q, twist_opt
+        #Excess power remaining to overcome drag and torque needed
+        excess = self.Pa*self.n - Pr
+
+        return Pr, T, Q, twist_opt, excess, self.V
     
     def callallnames(self):
         self.altitude()
         self.induction_factors()
-        Pr, T, Q, twist_opt = self.thrust()
+        Pr, T, Q, twist_opt, excess, self.V = self.thrust()
 
-        return Pr, T, Q, twist_opt
+        return Pr, T, Q, twist_opt, excess, self.V
     
 if __name__ == '__main__':
    ############################       REPLACE INPUTS HERE       ############################# 
@@ -170,9 +174,8 @@ if __name__ == '__main__':
         data = toml.load(f)
 
     p = Propeller_Thrust(Inputs(data))
-    Pr, T, Q, twist_opt = p.callallnames()
+    Pr, T, Q, twist_opt, excess, V = p.callallnames()
     
     print(f'A blade twist of {np.round(max(twist_opt)-min(twist_opt))} degrees is optimal.')
-    print(f'The total amount of power required is {np.round(Pr, 2)} kW')
+    print(f'The total amount of power required is {np.round(Pr, 2)} kW, resulting in an excess of {np.round(excess, 2)} kW at {np.round(V*3.6, 2)} kph')
     print(f'The total amount of thrust produced is {np.round(T, 2)} kN')
-
