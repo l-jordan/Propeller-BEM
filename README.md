@@ -1,4 +1,5 @@
 FIRST ESTIMATE BLADE ELEMENT PROPELLER MOMENTUM THEORY
+
 Author: Lauren Jordan
 Contact: l.jordan@student.tudelft.nl
 
@@ -26,6 +27,7 @@ All assumptions:
 3. Constant chord.
 
 RECOMMENDATIONS
+
 The next steps to be taken are to add the blade hub effects, incorporate the actual distributed chord 
 and to choose a twist distribution. From there a more accurate maximum speed and power required can be determined. 
 
