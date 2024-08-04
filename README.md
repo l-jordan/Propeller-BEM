@@ -31,7 +31,7 @@ RECOMMENDATIONS
 The next steps to be taken are to add the blade hub effects, incorporate the actual distributed chord 
 and to choose a twist distribution. From there a more accurate maximum speed and power required can be determined. 
 
-######################################### USEFUL SOURCES ############################################
+USEFUL SOURCES 
 1. I used the paper: Propeller Blade Element Momentum Theory with Vortex Wake Deflection
  [Rwigema, M.K., 2010] to create this programme.
 2. Where I got the lift and drag coefficient of my airfoil at 3 degrees AoA:
